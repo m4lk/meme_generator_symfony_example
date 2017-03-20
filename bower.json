@@ -1,0 +1,22 @@
+{
+  "name": "meme_generator",
+  "authors": [
+    "Rodrigo Cinto <en.rodrigo.gen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~> 3.3.6"
+  }
+}

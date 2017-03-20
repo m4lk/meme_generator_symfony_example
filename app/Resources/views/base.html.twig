@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        
+        {% block stylesheets %}
+          {% stylesheets  filter='scssphp, ?uglifycss' output='css/app.css'
+            'assets/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss'
+            'assets/scss/styles.scss' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+          {% endstylesheets %}  
+        {% endblock %}
+        
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        
+        {% block javascripts %}
+            {% javascripts filter='uglifyjs2, ?jsqueeze' output='js/app.js'
+              'assets/vendor/jquery/dist/jquery.js'
+              'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap.js'
+              'assets/js/*' %}
+                <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+        
+    </body>
+</html>
