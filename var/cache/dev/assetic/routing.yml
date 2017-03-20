@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /home/rodrigo/projects/meme_generator/app/config/routing_dev.yml
