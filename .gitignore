@@ -1,3 +1,6 @@
 # Git ignore
 web/css
 web/js
+var/cache/dev
+var/logs
+var/sessions/dev
